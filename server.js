@@ -61,7 +61,7 @@ app.listen(PORT, () => console.log("サーバーが起動しました"));
 // Corsの設定
 
 app.use(cors({
-  origin: 'http://localhost:3000', //アクセス許可するオリジン
+  origin: 'https://reactjs-realtime-chat.vercel.app/', //アクセス許可するオリジン
   credentials: true, //レスポンスヘッダーにAccess-Control-Allow-Credentials追加
   optionsSuccessStatus: 200 //レスポンスstatusを200に設定
 }))
