@@ -12,6 +12,10 @@ const conversationRoute = require("./routes/conversations");
 const messageRoute = require("./routes/messages");
 // const MyPageRoute = require("./routes/mypage");
 
+app.use(function(res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 const mongoose = require("mongoose");
 // require("dotenv").config();
